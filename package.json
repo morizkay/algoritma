@@ -1,0 +1,8 @@
+{
+  "name": "algoritma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/morizkay/algoritma.git",
+  "author": "morizkay <morizkay@live.com>",
+  "license": "MIT"
+}
