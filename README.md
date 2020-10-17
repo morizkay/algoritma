@@ -11,6 +11,7 @@ These algorithms sorted by it's type and name.
 
 Meanwhile, our priority is Data Mining's algorithms below, but feel free to add other algorithms as well. :smile:
 
+Data Mining and Machine Learning
 |Algorithms |Status|
 |-|-|
 |Adaboost|:x:|
@@ -18,6 +19,8 @@ Meanwhile, our priority is Data Mining's algorithms below, but feel free to add 
 |C4.5|:x:|
 |CART|:x:|
 |CT-Pro|:x:|
+|DBSCAN|:x:|
+|FP-Growth|:x:|
 |Expectation-Maximization|:x:|
 |K-mean|:x:|
 |KNN|:x:|
