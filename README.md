@@ -18,7 +18,7 @@ Data Mining and Machine Learning
 |Apriori|:x:|
 |C4.5|:x:|
 |CART|:x:|
-|CT-Pro|:x:|
+|CT-Pro|:keyboard:|
 |DBSCAN|:x:|
 |FP-Growth|:x:|
 |Expectation-Maximization|:x:|
