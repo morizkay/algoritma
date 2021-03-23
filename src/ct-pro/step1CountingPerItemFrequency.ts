@@ -6,7 +6,7 @@ type itemsFrequenciesType = {
 
 const itemsFrequency: Array<itemsFrequenciesType> = [];
 
-const step1CountPerItemFrequency = (transactionsData: any) => {
+const step1CountingPerItemFrequency = (transactionsData: any) => {
   for (
     let indexOfFirstArrayOfTransactionsData = 0;
     indexOfFirstArrayOfTransactionsData < transactionsData.length;
@@ -58,4 +58,4 @@ const step1CountPerItemFrequency = (transactionsData: any) => {
   return itemsFrequency;
 };
 
-export default step1CountPerItemFrequency;
+export default step1CountingPerItemFrequency;

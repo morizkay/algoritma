@@ -1,11 +1,12 @@
-import step1CountPerItemFrequency from './step1CountPerItemFrequency';
-import step2EliminatedLessThanMinimumSupported from './step2EliminatedLessThanMinimumSupported';
+import step1CountingPerItemFrequency from './step1CountingPerItemFrequency';
+import step2EliminatingWithFrequencyLessThanMinimumSupported from './step2EliminatingWithFrequencyLessThanMinimumSupported';
 import step3SortItemFrequencyDescending from './step3SortItemFrequencyDescending';
 import step4RegisterIndexNumberOnItem from './step4RegisterIndexNumberOnItem';
 import step5IndexingTransactionsData from './step5IndexingTransactionsData';
 import step6EliminatingUnsupportedData from './step6EliminatingUnsupportedData';
 import step7SortingIndexedTransactionsData from './step7SortingIndexedTransactionsData';
 import step8ReversingIndexedTransactionsData from './step8ReversingIndexedTransactionsData';
+import step9SetLocalItemAsociationBasedOnLastIndex from './step9SetLocalItemAsociationBasedOnLastIndex';
 
 console.clear();
 const transactionsData = [
@@ -26,13 +27,17 @@ const transactionsData = [
   ['Molexflu', 'Antangin', 'Sanaflu'],
 ];
 let indexedTransactionsData = [];
+let localItemAsociationBasedOnLastIndex = [];
 
 const minimumSupport = 4;
 
 let itemsData: Array<any> = [];
 
-itemsData = step1CountPerItemFrequency(transactionsData);
-itemsData = step2EliminatedLessThanMinimumSupported(itemsData, minimumSupport);
+itemsData = step1CountingPerItemFrequency(transactionsData);
+itemsData = step2EliminatingWithFrequencyLessThanMinimumSupported(
+  itemsData,
+  minimumSupport,
+);
 itemsData = step3SortItemFrequencyDescending(itemsData);
 itemsData = step4RegisterIndexNumberOnItem(itemsData);
 indexedTransactionsData = step5IndexingTransactionsData(
@@ -48,8 +53,13 @@ indexedTransactionsData = step7SortingIndexedTransactionsData(
 indexedTransactionsData = step8ReversingIndexedTransactionsData(
   indexedTransactionsData,
 );
+localItemAsociationBasedOnLastIndex = step9SetLocalItemAsociationBasedOnLastIndex(
+  indexedTransactionsData,
+  itemsData.length,
+);
 
-console.log({ itemsData, indexedTransactionsData });
+console.log(localItemAsociationBasedOnLastIndex);
+console.log(indexedTransactionsData);
 
 /// / 5. Lakukan pencarian frequency itemset secara lokal dari indeks terakhir, yaitu indeks
 /// / Index 7
