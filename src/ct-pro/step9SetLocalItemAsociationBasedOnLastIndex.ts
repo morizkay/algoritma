@@ -21,21 +21,24 @@ const step9SetLocalItemAsociationBasedOnLastIndex = (
     localItemAsociationBasedOnLastIndex.length;
     indexOfLocalItemAsociationBasedOnLastIndex++
   ) {
-    console.log(
-      localItemAsociationBasedOnLastIndex[
-        indexOfLocalItemAsociationBasedOnLastIndex
-      ],
-    );
-
     for (
       let indexOfFirstArrayOfIndexedTransactionsData = 0;
       indexOfFirstArrayOfIndexedTransactionsData <
       indexedTransactionsData.length;
       indexOfFirstArrayOfIndexedTransactionsData++
     ) {
-      console.log(
-        indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData][0],
-      );
+      if (
+        localItemAsociationBasedOnLastIndex[
+          indexOfLocalItemAsociationBasedOnLastIndex
+        ].value ===
+        indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData][0]
+      ) {
+        console.log(
+          localItemAsociationBasedOnLastIndex[
+            indexOfLocalItemAsociationBasedOnLastIndex
+          ].value,
+        );
+      }
     }
   }
 
