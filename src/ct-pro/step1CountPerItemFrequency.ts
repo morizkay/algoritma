@@ -1,7 +1,7 @@
 type itemsFrequenciesType = {
   index?: any;
   _id: any;
-  frequent: any;
+  frequency: any;
 };
 
 const itemsFrequency: Array<itemsFrequenciesType> = [];
@@ -24,7 +24,7 @@ const step1CountPerItemFrequency = (transactionsData: any) => {
             transactionsData[indexOfFirstArrayOfTransactionsData][
               indexOfSecondaryArrayOfTransactionsData
             ],
-          frequent: 1,
+          frequency: 1,
         });
       } else {
         let found: boolean = false;
@@ -39,7 +39,7 @@ const step1CountPerItemFrequency = (transactionsData: any) => {
               indexOfSecondaryArrayOfTransactionsData
             ]
           ) {
-            itemsFrequency[indexOfItemsFrequency].frequent++;
+            itemsFrequency[indexOfItemsFrequency].frequency++;
             found = true;
           }
         }
@@ -49,7 +49,7 @@ const step1CountPerItemFrequency = (transactionsData: any) => {
               transactionsData[indexOfFirstArrayOfTransactionsData][
                 indexOfSecondaryArrayOfTransactionsData
               ],
-            frequent: 1,
+            frequency: 1,
           });
         }
       }

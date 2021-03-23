@@ -2,7 +2,7 @@ let sortedItemFrequencyDescending = [];
 
 const step3SortItemFrequencyDescending = (data: any) => {
   sortedItemFrequencyDescending = data.sort((itemOne: any, itemTwo: any) =>
-    itemOne.frequent > itemTwo.frequent ? -1 : 1,
+    itemOne.frequency > itemTwo.frequency ? -1 : 1,
   );
   return sortedItemFrequencyDescending;
 };
