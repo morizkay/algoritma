@@ -9,29 +9,33 @@ const step9SetLocalItemAsociationBasedOnLastIndex = (
     indexOfItemsDataLength++
   ) {
     localItemAsociationBasedOnLastIndex.push({
-      rootOfLocalIndex: indexOfItemsDataLength + 1,
+      value: indexOfItemsDataLength + 1,
+      frequency: 0,
+      children: {},
     });
+  }
+
+  for (
+    let indexOfLocalItemAsociationBasedOnLastIndex = 0;
+    indexOfLocalItemAsociationBasedOnLastIndex <
+    localItemAsociationBasedOnLastIndex.length;
+    indexOfLocalItemAsociationBasedOnLastIndex++
+  ) {
+    console.log(
+      localItemAsociationBasedOnLastIndex[
+        indexOfLocalItemAsociationBasedOnLastIndex
+      ],
+    );
+
     for (
       let indexOfFirstArrayOfIndexedTransactionsData = 0;
       indexOfFirstArrayOfIndexedTransactionsData <
       indexedTransactionsData.length;
       indexOfFirstArrayOfIndexedTransactionsData++
     ) {
-      for (
-        let indexOfSecondArrayOfIndexedTransactionsData = 0;
-        indexOfSecondArrayOfIndexedTransactionsData <
-        indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData]
-          .length;
-        indexOfSecondArrayOfIndexedTransactionsData++
-      ) {
-        if (
-          localItemAsociationBasedOnLastIndex[indexOfItemsDataLength]
-            .rootOfLocalIndex ===
-          indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData][0]
-        ) {
-          console.log('Ketemu');
-        }
-      }
+      console.log(
+        indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData][0],
+      );
     }
   }
 
