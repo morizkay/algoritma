@@ -14,8 +14,8 @@ const step1CountingPerItemFrequency = (transactionsData: any) => {
   ) {
     for (
       let indexOfSecondaryArrayOfTransactionsData = 0;
-      indexOfSecondaryArrayOfTransactionsData <
-      transactionsData[indexOfFirstArrayOfTransactionsData].length;
+      indexOfSecondaryArrayOfTransactionsData
+      < transactionsData[indexOfFirstArrayOfTransactionsData].length;
       indexOfSecondaryArrayOfTransactionsData += 1
     ) {
       if (itemsFrequency.length === 0) {
@@ -34,8 +34,8 @@ const step1CountingPerItemFrequency = (transactionsData: any) => {
           indexOfItemsFrequency += 1
         ) {
           if (
-            itemsFrequency[indexOfItemsFrequency]._id ===
-            transactionsData[indexOfFirstArrayOfTransactionsData][
+            itemsFrequency[indexOfItemsFrequency]._id
+            === transactionsData[indexOfFirstArrayOfTransactionsData][
               indexOfSecondaryArrayOfTransactionsData
             ]
           ) {

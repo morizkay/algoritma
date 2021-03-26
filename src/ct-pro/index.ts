@@ -8,6 +8,7 @@ import step7SortingIndexedTransactionsData from './step7SortingIndexedTransactio
 import step8ReversingIndexedTransactionsData from './step8ReversingIndexedTransactionsData';
 import step9SetLocalItemAsociationBasedOnLastIndex from './step9SetLocalItemAsociationBasedOnLastIndex';
 
+// eslint-disable-next-line no-console
 console.clear();
 const transactionsData = [
   ['Bisolvon', 'Sanaflu', 'Bodrex'],
@@ -58,7 +59,10 @@ localItemAsociationBasedOnLastIndex = step9SetLocalItemAsociationBasedOnLastInde
   itemsData.length,
 );
 
+// eslint-disable-next-line no-console
 console.log(localItemAsociationBasedOnLastIndex);
+
+// eslint-disable-next-line no-console
 console.log(indexedTransactionsData);
 
 /// / 5. Lakukan pencarian frequency itemset secara lokal dari indeks terakhir, yaitu indeks

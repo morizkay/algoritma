@@ -17,21 +17,21 @@ const step9SetLocalItemAsociationBasedOnLastIndex = (
 
   for (
     let indexOfLocalItemAsociationBasedOnLastIndex = 0;
-    indexOfLocalItemAsociationBasedOnLastIndex <
-    localItemAsociationBasedOnLastIndex.length;
+    indexOfLocalItemAsociationBasedOnLastIndex
+    < localItemAsociationBasedOnLastIndex.length;
     indexOfLocalItemAsociationBasedOnLastIndex += 1
   ) {
     for (
       let indexOfFirstArrayOfIndexedTransactionsData = 0;
-      indexOfFirstArrayOfIndexedTransactionsData <
-      indexedTransactionsData.length;
+      indexOfFirstArrayOfIndexedTransactionsData
+      < indexedTransactionsData.length;
       indexOfFirstArrayOfIndexedTransactionsData += 1
     ) {
       if (
         localItemAsociationBasedOnLastIndex[
           indexOfLocalItemAsociationBasedOnLastIndex
-        ].value ===
-        indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData][0]
+        ].value
+        === indexedTransactionsData[indexOfFirstArrayOfIndexedTransactionsData][0]
       ) {
         console.log(
           localItemAsociationBasedOnLastIndex[

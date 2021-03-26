@@ -11,9 +11,7 @@ const step8ReversingIndexedTransactionsData = (
     reversedIndexedTransationsData.push(
       indexedTransactionsData[
         indexOfIndexedTransactionsData
-      ].sort((itemOne: number, itemTwo: number) =>
-        itemOne > itemTwo ? -1 : 1,
-      ),
+      ].sort((itemOne: number, itemTwo: number) => (itemOne > itemTwo ? -1 : 1)),
     );
   }
   return reversedIndexedTransationsData;

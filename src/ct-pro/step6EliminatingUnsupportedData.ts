@@ -1,6 +1,4 @@
-const step6EliminatingUnsupportedData = (
-  indexedTransactionsData: string | any[],
-) => {
+const step6EliminatingUnsupportedData = (indexedTransactionsData: any[]) => {
   for (
     let firstIndexOfItemsData = 0;
     firstIndexOfItemsData < indexedTransactionsData.length;
@@ -8,8 +6,8 @@ const step6EliminatingUnsupportedData = (
   ) {
     for (
       let secondIndexOfItemsData = 0;
-      secondIndexOfItemsData <
-      indexedTransactionsData[firstIndexOfItemsData].length;
+      secondIndexOfItemsData
+      < indexedTransactionsData[firstIndexOfItemsData].length;
       secondIndexOfItemsData += 1
     ) {
       if (

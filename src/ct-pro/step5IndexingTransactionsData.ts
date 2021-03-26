@@ -17,13 +17,13 @@ const step5IndexingTransactionsData = (
     ) {
       for (
         let indexOfSecondaryArrayOfItemsData = 0;
-        indexOfSecondaryArrayOfItemsData <
-        indexedTransactionsData[indexOfFirstArrayOfItemsData].length;
+        indexOfSecondaryArrayOfItemsData
+        < indexedTransactionsData[indexOfFirstArrayOfItemsData].length;
         indexOfSecondaryArrayOfItemsData += 1
       ) {
         if (
-          itemsData[indexOfItemsData]._id ===
-          indexedTransactionsData[indexOfFirstArrayOfItemsData][
+          itemsData[indexOfItemsData]._id
+          === indexedTransactionsData[indexOfFirstArrayOfItemsData][
             indexOfSecondaryArrayOfItemsData
           ]
         ) {
