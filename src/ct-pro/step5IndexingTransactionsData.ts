@@ -8,18 +8,18 @@ const step5IndexingTransactionsData = (
   for (
     let indexOfItemsData = 0;
     indexOfItemsData < itemsData.length;
-    indexOfItemsData++
+    indexOfItemsData += 1
   ) {
     for (
       let indexOfFirstArrayOfItemsData = 0;
       indexOfFirstArrayOfItemsData < indexedTransactionsData.length;
-      indexOfFirstArrayOfItemsData++
+      indexOfFirstArrayOfItemsData += 1
     ) {
       for (
         let indexOfSecondaryArrayOfItemsData = 0;
         indexOfSecondaryArrayOfItemsData <
         indexedTransactionsData[indexOfFirstArrayOfItemsData].length;
-        indexOfSecondaryArrayOfItemsData++
+        indexOfSecondaryArrayOfItemsData += 1
       ) {
         if (
           itemsData[indexOfItemsData]._id ===

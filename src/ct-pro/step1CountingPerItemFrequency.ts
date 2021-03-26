@@ -10,13 +10,13 @@ const step1CountingPerItemFrequency = (transactionsData: any) => {
   for (
     let indexOfFirstArrayOfTransactionsData = 0;
     indexOfFirstArrayOfTransactionsData < transactionsData.length;
-    indexOfFirstArrayOfTransactionsData++
+    indexOfFirstArrayOfTransactionsData += 1
   ) {
     for (
       let indexOfSecondaryArrayOfTransactionsData = 0;
       indexOfSecondaryArrayOfTransactionsData <
       transactionsData[indexOfFirstArrayOfTransactionsData].length;
-      indexOfSecondaryArrayOfTransactionsData++
+      indexOfSecondaryArrayOfTransactionsData += 1
     ) {
       if (itemsFrequency.length === 0) {
         itemsFrequency.push({
@@ -31,7 +31,7 @@ const step1CountingPerItemFrequency = (transactionsData: any) => {
         for (
           let indexOfItemsFrequency = 0;
           indexOfItemsFrequency < itemsFrequency.length && !found;
-          indexOfItemsFrequency++
+          indexOfItemsFrequency += 1
         ) {
           if (
             itemsFrequency[indexOfItemsFrequency]._id ===
@@ -39,7 +39,7 @@ const step1CountingPerItemFrequency = (transactionsData: any) => {
               indexOfSecondaryArrayOfTransactionsData
             ]
           ) {
-            itemsFrequency[indexOfItemsFrequency].frequency++;
+            itemsFrequency[indexOfItemsFrequency].frequency += 1;
             found = true;
           }
         }

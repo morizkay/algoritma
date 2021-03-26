@@ -6,7 +6,7 @@ const step8ReversingIndexedTransactionsData = (
   for (
     let indexOfIndexedTransactionsData = 0;
     indexOfIndexedTransactionsData < indexedTransactionsData.length;
-    indexOfIndexedTransactionsData++
+    indexOfIndexedTransactionsData += 1
   ) {
     reversedIndexedTransationsData.push(
       indexedTransactionsData[

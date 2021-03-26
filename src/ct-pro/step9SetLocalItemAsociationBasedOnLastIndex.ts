@@ -6,7 +6,7 @@ const step9SetLocalItemAsociationBasedOnLastIndex = (
   for (
     let indexOfItemsDataLength = 0;
     indexOfItemsDataLength < itemsDataLength;
-    indexOfItemsDataLength++
+    indexOfItemsDataLength += 1
   ) {
     localItemAsociationBasedOnLastIndex.push({
       value: indexOfItemsDataLength + 1,
@@ -19,13 +19,13 @@ const step9SetLocalItemAsociationBasedOnLastIndex = (
     let indexOfLocalItemAsociationBasedOnLastIndex = 0;
     indexOfLocalItemAsociationBasedOnLastIndex <
     localItemAsociationBasedOnLastIndex.length;
-    indexOfLocalItemAsociationBasedOnLastIndex++
+    indexOfLocalItemAsociationBasedOnLastIndex += 1
   ) {
     for (
       let indexOfFirstArrayOfIndexedTransactionsData = 0;
       indexOfFirstArrayOfIndexedTransactionsData <
       indexedTransactionsData.length;
-      indexOfFirstArrayOfIndexedTransactionsData++
+      indexOfFirstArrayOfIndexedTransactionsData += 1
     ) {
       if (
         localItemAsociationBasedOnLastIndex[
